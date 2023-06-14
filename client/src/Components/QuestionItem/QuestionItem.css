@@ -1,19 +1,28 @@
-.city-row {
-  font-size: 3vmin;
+.question-box {
+  width: 80%;
+}
+
+.question-row {
+  font-size: 2.5vmin;
   width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.city-row-element {
+.question-row-title{
+  cursor: pointer;
+}
+
+.question-row-element {
+  font-size: 1.8vmin;
   width: 26%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
-.city-row-buttons {
+.question-row-buttons {
   width: 10%;
   display: flex;
   flex-direction: row;
