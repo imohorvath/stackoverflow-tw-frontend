@@ -1,0 +1,25 @@
+/* ThankYou.css */
+
+.thankyouDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#thankYouButton {
+  width: 35%;
+  font-family: "Barlow Condensed";
+  font-size: 1.1em;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+#thankYouButton:hover {
+  background-color: rgba(0, 0, 0, 0.788);
+}
+
+.thankyouDiv > h2 {
+  margin: 5%;
+}

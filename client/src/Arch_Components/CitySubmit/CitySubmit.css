@@ -1,0 +1,78 @@
+.city-submit {
+  font-family: "Barlow Condensed";
+  width: 60%;
+  height: 30vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: black solid 1px;
+}
+
+.message-for-user {
+  font-size: 2.5vmin; 
+}
+
+/*
+.message-for-user-buttons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.message-for-user-button {
+  width: 30%;
+  height: 40%;
+} */
+
+.comment-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.1em;
+}
+
+.comment-div {
+  padding: 2%;
+  width: 30%;
+}
+
+.comment-input {
+  color: black;
+  background-color: white;
+  font-family: "Barlow Condensed";
+  padding: 2%;
+  width: 100%;
+  border: 0.8px solid grey;
+  font-size: 1em;
+}
+
+::placeholder {
+  font-family: "Barlow Condensed";
+  color: black;
+}
+
+.submit-button-div {
+  padding: 2%;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-to-favs {
+  width: 70%;
+  height: 75%;
+  font-family: "Barlow Condensed";
+  font-size: 1.1em;
+  color: white;
+  border: transparent;
+  background-color: black;
+  cursor: pointer;
+}

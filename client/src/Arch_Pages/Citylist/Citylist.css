@@ -1,0 +1,34 @@
+.city-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.citylist-header {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5vmin;
+    margin-bottom: 1vmin;
+    border-bottom: 0.15em dashed black;
+}
+
+.citylist-header-item{
+    display: flex;
+    width: 26%;
+    flex-direction: row;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+/* .citylist-header-item h3:hover{
+    color: #db86b8;
+    cursor: pointer;
+} */
+
+.citylist-header-empty {
+    width: 20%
+}

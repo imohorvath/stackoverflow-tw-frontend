@@ -1,0 +1,43 @@
+.question-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-header {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5vmin;
+    margin-bottom: 1vmin;
+    /* border-bottom: 0.15em dotted black; */
+}
+
+.question-header-item{
+    display: flex;
+    width: 26%;
+    flex-direction: row;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+/* .citylist-header-item h3:hover{
+    color: #db86b8;
+    cursor: pointer;
+} */
+
+.questionlist-add-new{
+    width: 80%;
+    min-height: 5vmin;
+    margin-top: 1.5vmin;
+    margin-bottom: 1vmin;
+}
+
+
+.citylist-header-empty {
+    width: 20%
+}
