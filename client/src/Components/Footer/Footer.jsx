@@ -4,7 +4,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
-        <h2>@Copyright Forumizz</h2>
+        <h2>@Copyright Query Quarry</h2>
     </div>
   );
 };
