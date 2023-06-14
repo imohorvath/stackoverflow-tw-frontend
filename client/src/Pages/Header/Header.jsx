@@ -27,7 +27,7 @@ const Header = () => {
       <div className="header">
         <div className="logo-section">
           <img src={logo} className="main-logo" alt="logo" />
-          <h1>Forumizz</h1>
+          <h1 className="logo-section-title">Query Quarry</h1>
         </div>
         <div className="navbar">
           {/* <HeaderButton route="/">Cities</HeaderButton>

@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Footer from "../../Components/Footer";
 import Loading from "../../Components/Loading";
 import QuestionItem from "../../Components/QuestionItem";
 import QuestionForm from "../../Components/QuestionForm";
 
-import "./Questions.css";
+import "./QuestionList.css";
 
-const Questions = () => {
+const QuestionList = () => {
+  const navigate = useNavigate(); 
+
   const [questionList, setQuestionList] = useState([]);
-  const [originalList, setOriginalList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [sortColumn, setSortColumn] = useState(null);
   const [sortOrder, setSortOrder] = useState(null);
@@ -20,7 +22,6 @@ const Questions = () => {
       .then((res) => res.json())
       .then((result) => {
         setQuestionList(result);
-        setOriginalList(result);
         setLoading(false);
       });
   }, []);
@@ -39,7 +40,6 @@ const Questions = () => {
           setQuestionList(result);
           setLoading(false);
         });
-
     } else if (sortColumn === "date") {
       setLoading(true);
 
@@ -49,11 +49,10 @@ const Questions = () => {
           setQuestionList(result);
           setLoading(false);
         });
-
     } else if (sortColumn === "answer") {
       setLoading(true);
 
-      fetch(`/questions/sort/answerCount?sort=${sortOrder}`)
+      fetch(`/questions/sort/answer?sort=${sortOrder}`)
         .then((res) => res.json())
         .then((result) => {
           setQuestionList(result);
@@ -88,8 +87,6 @@ const Questions = () => {
   };
 
   const postNewQuestion = (question) => {
-    console.log(question);
-
     setShowNewQuestionForm(false);
 
     fetch("/questions/", {
@@ -99,42 +96,45 @@ const Questions = () => {
       },
       body: JSON.stringify(question),
     })
-    .then((res) => res.json())
-    .then((question) => {
-      setOriginalList([...originalList, question]);
-      setQuestionList([...questionList, question]);
-    })
+      .then((res) => res.json())
+      .then((question) => {
+        setQuestionList([...questionList, question]);
+        navigate(`/question/${question.question_id}`);
+      });
   };
 
   return (
     <>
       <div className="question-container">
         <div className="question-list">
+          <div className="questionlist-add-new">
+            <button
+              className="questionlist-add-new-button"
+              onClick={() => setShowNewQuestionForm(!showNewQuestionForm)}
+            >
+              New question
+            </button>
+            {showNewQuestionForm && <QuestionForm onSave={postNewQuestion} />}
+          </div>
           <div className="question-header">
             <div
-              className="questionlist-header-item"
+              className="question-header-item"
               onClick={() => handleSort("title")}
             >
               <h3>Title {getArrowIcon("title")}</h3>
             </div>
             <div
-              className="questionlist-header-item"
+              className="question-header-item"
               onClick={() => handleSort("date")}
             >
               <h3>Date {getArrowIcon("date")}</h3>
             </div>
             <div
-              className="questionlist-header-item"
+              className="question-header-item"
               onClick={() => handleSort("answer")}
             >
               <h3>Answers count {getArrowIcon("answer")}</h3>
             </div>
-          </div>
-          <div className="questionlist-add-new">
-              <button onClick={() => setShowNewQuestionForm(!showNewQuestionForm)}>Add new question</button>
-              {showNewQuestionForm && 
-                <QuestionForm onSave={postNewQuestion}/>
-              }
           </div>
           {questionList.map((question) => (
             <QuestionItem question={question} key={question.question_id} />
@@ -146,4 +146,4 @@ const Questions = () => {
   );
 };
 
-export default Questions;
+export default QuestionList;

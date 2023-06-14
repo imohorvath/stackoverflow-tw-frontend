@@ -43,7 +43,8 @@ label {
 }
 
 .contact-header {
-  margin: 5%;
+  margin-top: 5%;
+  margin-bottom: 1%;
 }
 
 .inputDiv-button {

@@ -5,7 +5,8 @@ import { createBrowserRouter, RouterProvider  } from "react-router-dom";
 
 import Header from "./Pages/Header";
 import ErrorPage from "./Pages/ErrorPage";
-import Questions from "./Pages/Questions";
+import QuestionList from "./Pages/QuestionList";
+import QuestionDetail from "./Pages/QuestionDetail";
 
 import "./index.css";
 
@@ -17,7 +18,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Questions />,
+        element: <QuestionList />,
+      },
+      {
+        path: "/question/:questionid",
+        element: <QuestionDetail />,
       },
       /*{
         path: "/bucketlist",

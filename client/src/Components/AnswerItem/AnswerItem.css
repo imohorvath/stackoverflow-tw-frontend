@@ -1,20 +1,20 @@
-.question-box {
+.answer-box {
   width: 80%;
 }
 
-.question-row {
+.answer-row {
   font-size: 2.5vmin;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.question-row-title{
-  cursor: pointer;
+.answer-row-detail{
+  text-align: left;
 }
 
-.question-row-element {
+.answer-row-element {
   font-size: 1.8vmin;
   width: 26%;
   display: flex;
@@ -22,7 +22,7 @@
   justify-content: flex-start;
 }
 
-.question-row-buttons {
+.answer-row-buttons {
   width: 10%;
   display: flex;
   flex-direction: row;

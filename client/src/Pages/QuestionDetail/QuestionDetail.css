@@ -1,0 +1,40 @@
+.question-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-description-title{
+  width: 80%;
+}
+
+.question-description-detail{
+  width: 80%;
+}
+
+.question-description-add-new {
+  width: 80%;
+  min-height: 3vmin;
+  margin-top: 1.5vmin;
+  margin-bottom: 1vmin;
+}
+
+.question-description-add-new-button {
+    width: 15%;
+    height: 50%;
+    font-family: "Overpass";
+    font-size: 1.1em;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.question-description-add-new-button:hover {
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+.question-description-answerlist{
+  width: 80%;
+}
