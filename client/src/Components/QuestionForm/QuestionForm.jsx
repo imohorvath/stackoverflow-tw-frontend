@@ -1,7 +1,7 @@
 import "./QuestionForm.css";
 import React, { useState } from "react";
 
-const ContactUsForm = ({ onSave }) => {
+const QuestionForm = ({ onSave }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -37,4 +37,4 @@ const ContactUsForm = ({ onSave }) => {
   );
 };
 
-export default ContactUsForm;
+export default QuestionForm;
