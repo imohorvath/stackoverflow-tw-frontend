@@ -1,0 +1,43 @@
+.answer-box {
+  width: 80%;
+}
+
+.answer-row {
+  font-size: 2.5vmin;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.answer-row-detail{
+  text-align: left;
+}
+
+.answer-row-element {
+  font-size: 1.8vmin;
+  width: 26%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.answer-row-buttons {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.function-button {
+  width: 60%;
+  height: 30%;
+  font-family: "Barlow Condensed";
+  font-size: 0.6em;
+  color: white;
+  background-color: #434343;
+  border: transparent;
+}
+
+
