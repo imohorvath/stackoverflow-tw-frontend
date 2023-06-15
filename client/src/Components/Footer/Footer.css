@@ -1,6 +1,8 @@
 .footer {
     font-family: "Bebas Neue";
     margin-top: 5%;
-    margin-bottom: 3%;
+    height: 5vmin;
+    background-color: #009edf;
+    color: white;
 }
 
