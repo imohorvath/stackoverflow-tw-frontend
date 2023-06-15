@@ -7,6 +7,7 @@ import Header from "./Pages/Header";
 import ErrorPage from "./Pages/ErrorPage";
 import QuestionList from "./Pages/QuestionList";
 import QuestionDetail from "./Pages/QuestionDetail";
+import Login from "./Pages/Login";
 
 import "./index.css";
 
@@ -24,14 +25,14 @@ const router = createBrowserRouter([
         path: "/question/:questionid",
         element: <QuestionDetail />,
       },
-      /*{
-        path: "/bucketlist",
-        element: <Bucketlist />,
+      {
+        path: "/login",
+        element: <Login />,
       },
       {
-        path: "/contactus",
-        element: <ContactUs />,
-      },*/
+        path: "/:userid/",
+        element: <QuestionList />,
+      },
     ]
   },
 ]);
