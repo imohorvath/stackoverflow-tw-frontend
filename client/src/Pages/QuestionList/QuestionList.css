@@ -39,10 +39,11 @@
     font-family: "Overpass";
     font-size: 1.1em;
     color: white;
-    background-color: black;
+    background-color: #009edf;
+    border: none;
     cursor: pointer;
 }
 
 .questionlist-add-new-button:hover {
-    background-color: rgba(0, 0, 0, 0.788);
+    background-color: #014360;
 }

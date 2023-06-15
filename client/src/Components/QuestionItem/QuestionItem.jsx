@@ -1,8 +1,29 @@
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Loading from "../Loading";
 import "./QuestionItem.css";
 
 const QuestionItem = ({ question }) => {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+  const [user, setUser] = useState(null);
+
+  /*useEffect(() => {
+    setLoading(true);
+
+    fetch(`/users/${question.user_id}`)
+    .then((res) => res.json())
+    .then((result) => {
+      setUser(result);
+      console.log(result);
+      setLoading(false);
+    });
+  }, []);*/
+
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <>

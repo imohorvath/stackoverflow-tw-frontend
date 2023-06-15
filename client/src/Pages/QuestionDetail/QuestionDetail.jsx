@@ -24,10 +24,10 @@ const QuestionDetail = () => {
         setLoading(false);
       });
     
-    setLoading(true);
     fetch(`/answers/all/${questionid}`)
       .then((res) => res.json())
       .then((result) => {
+        setLoading(true);
         setAnswers(result);
         setLoading(false);
       });
@@ -64,6 +64,9 @@ const QuestionDetail = () => {
           </div>
           <div className="question-description-detail">
             <p>{question && question.question_detail}</p>
+          </div>
+          <div className="question-description-user">
+            <p>Asked by: User {question && question.user_id}</p>
           </div>
           <div className="question-description-add-new">
             <button

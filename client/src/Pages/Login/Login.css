@@ -1,0 +1,68 @@
+.login-container {
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 40%;
+  padding: 1rem;
+  gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h1 {
+  font-family: "Overpass";
+  cursor: pointer;
+}
+
+.login-container p {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.login-container-message-mandantory {
+  color: rgb(109, 101, 99);
+}
+
+.login-container-message-optional {
+  color: rgb(70, 5, 5);
+  font-weight: 700;
+}
+
+.login-container label {
+  font-family: "Overpass";
+}
+
+.login-container input {
+  width: 70%;
+  height: 10%;
+  padding: 0.8rem;
+  font-family: "Overpass";
+  border: 0.005rem solid rgb(214, 212, 212);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-container button {
+  width: 30%;
+  height: 50%;
+  font-family: "Overpass";
+  font-size: 1.1em;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+/*.login-container button {
+    font-family: 'Overpass';
+    width: 35%;
+    height: 2.5rem;
+    border: 0.01rem solid black;
+
+  }*/

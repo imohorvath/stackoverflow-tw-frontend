@@ -1,4 +1,5 @@
 #questionForm {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,10 +8,9 @@
 
 .inputDiv {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 10px 0;
-  width: 100%;
-  max-width: 60vw;
+  width: 60%;
   align-items: center;
 }
 
@@ -20,26 +20,27 @@ label {
 }
 
 
-#question_title,
-#question_detail {
+#answer_detail {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  width: 70%;
+  width: 98%;
+  height: 3vmin;
 }
 
 #submitQuestion {
-  width: 10%;
+  width: 15%;
   height: 50%;
   font-family: "Overpass";
   font-size: 1.1em;
   color: white;
-  background-color: black;
+  background-color: #009edf;
+  border: none;
   cursor: pointer;
 }
 
 #submitQuestion:hover {
-  background-color: rgba(0, 0, 0, 0.788);
+  background-color: #014360;
 }
 
 .contact-header {
@@ -48,8 +49,9 @@ label {
 }
 
 .inputDiv-button {
-  width: 100%;
+  width: 60%;
+  margin: 10px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }

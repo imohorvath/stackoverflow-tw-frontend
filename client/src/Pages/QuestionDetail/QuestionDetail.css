@@ -8,10 +8,18 @@
 
 .question-description-title{
   width: 80%;
+  font-size: 4.0vmin;
+  font-weight: bolder;
 }
 
 .question-description-detail{
   width: 80%;
+  font-size: 3.0vmin;
+}
+
+.question-description-user{
+  width: 80%;
+  font-size: 2.3vmin;
 }
 
 .question-description-add-new {
@@ -27,12 +35,13 @@
     font-family: "Overpass";
     font-size: 1.1em;
     color: white;
-    background-color: black;
+    background-color: #009edf;
+    border: none;
     cursor: pointer;
 }
 
 .question-description-add-new-button:hover {
-    background-color: rgba(0, 0, 0, 0.788);
+    background-color: #014360;
 }
 
 .question-description-answerlist{

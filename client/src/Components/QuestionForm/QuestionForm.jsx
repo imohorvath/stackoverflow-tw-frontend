@@ -18,16 +18,15 @@ const QuestionForm = ({ onSave }) => {
   return (
     <>
       <div className="contact-header">
-        <h2>Type your question</h2>
       </div>
       <form id="questionForm" className="question-form" onSubmit={onSubmit}>
         <div className="inputDiv">
-          <label htmlFor="question_title">Question title:</label>
-          <input type="text" id="question_title" name="question_title" required />
+          <label htmlFor="question_title">Title:</label>
+          <input type="text" id="question_title" name="question_title" required placeholder="Type here your question's title..." />
         </div>
         <div className="inputDiv">
-          <label htmlFor="question_detail">Question description:</label>
-          <input type="text" id="question_detail" name="question_detail" required />
+          <label htmlFor="question_detail">Description:</label>
+          <input type="text" id="question_detail" name="question_detail" required placeholder="Type here your question's description..."/>
         </div>
         <div className="inputDiv-button">
           <input type="submit" id="submitQuestion" />

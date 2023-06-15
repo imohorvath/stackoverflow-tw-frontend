@@ -2,8 +2,6 @@ import "./AnswerItem.css";
 
 const AnswerItem = ({ answer }) => {
 
-  console.log(answer);
-
   return (
     <>
       <div className="answer-box ">
